@@ -9,9 +9,22 @@
 [![Open Source Helpers](https://www.codetriage.com/gin-gonic/gin/badges/users.svg)](https://www.codetriage.com/gin-gonic/gin)
 [![Release](https://img.shields.io/github/release/gin-gonic/gin.svg?style=flat-square)](https://github.com/gin-gonic/gin/releases)
 [![TODOs](https://badgen.net/https/api.tickgit.com/badgen/github.com/gin-gonic/gin)](https://www.tickgit.com/browse?repo=github.com/gin-gonic/gin)
+Gin is a web framework written in Go. It features a martini-like API with performance that is up to 40 times faster thanks to httprouter. If you need performance and good productivity, you will love Gin.
 
+Gin's key features are:
+
+Zero allocation router
+Speed
+Middleware support
+Crash-free
+JSON validation
+Route grouping
+Error management
+Built-in rendering
+Extensible
 Proyek ini adalah REST API sederhana yang dikembangkan dengan Golang.
 
+Getting started
 ## Daftar Isi
 1. [Pendahuluan](#pendahuluan)
 2. [Fitur](#fitur)
