@@ -11,7 +11,7 @@ var DB *gorm.DB
 
 // Fungsi untuk menghubungkan ke database
 func ConnectDatabase() {
-	dsn := "root:@tcp(http://localhost:8080)/go_restapi_sddp"
+	dsn := "root:@tcp(127.0.0.1:3306)/go_restapi_sddp"
 	var err error
 	DB, err = gorm.Open(mysql.Open(dsn), &gorm.Config{})
 	if err != nil {
