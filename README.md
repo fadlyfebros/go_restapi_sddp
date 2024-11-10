@@ -44,9 +44,9 @@ Proyek ini bertujuan untuk memberikan contoh implementasi REST API menggunakan G
 Sebelum memulai, pastikan Anda sudah memiliki:
 - Golang versi 1.20 atau lebih baru
 - xampp
-- MySQL kl blm punya download di ([https://dev.mysql.com/downloads/installer/](https://dev.mysql.com/downloads/installer/))
+- MySQL kl blm punya download di ([sini](https://dev.mysql.com/downloads/installer/))
 - Git
-- postman kl blm punya download di ([https://www.postman.com/downloads/](https://www.postman.com/downloads/))
+- postman kl blm punya download di ([sini](https://www.postman.com/downloads/))
 
 ## Instalasi
 Ikuti langkah-langkah berikut untuk menginstal proyek:
@@ -54,9 +54,9 @@ Ikuti langkah-langkah berikut untuk menginstal proyek:
 1. Persiapkan lingkungan pengembangan
 Pastikan Anda telah menginstal beberapa alat berikut:
 
-XAMPP (termasuk MySQL). Jika belum, Anda dapat mengunduhnya di ([https://dev.mysql.com/downloads/installer/](sini)).
+XAMPP (termasuk MySQL). Jika belum, Anda dapat mengunduhnya di ([sini](https://dev.mysql.com/downloads/installer/)).
 MySQL (termasuk service MySQL yang dijalankan). Jika Anda menggunakan XAMPP, MySQL sudah termasuk di dalamnya.
-Git untuk meng-clone repository. Jika belum terinstal, Anda dapat mengunduhnya di ([https://git-scm.com/downloads](sini)).
+Git untuk meng-clone repository. Jika belum terinstal, Anda dapat mengunduhnya di ([sini](https://git-scm.com/downloads)).
 Go (Golang). Pastikan Anda sudah menginstal Golang versi 1.20 atau lebih baru, dapat diunduh di ([https://go.dev/doc/install](sini)).
 
 2. Clone repository
