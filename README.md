@@ -46,6 +46,7 @@ Sebelum memulai, pastikan Anda sudah memiliki:
 - xampp
 - MySQL kl blm punya download di ([https://dev.mysql.com/downloads/installer/](https://dev.mysql.com/downloads/installer/))
 - Git
+- postman kl blm punya download di ([https://www.postman.com/downloads/](https://www.postman.com/downloads/))
 
 ## Instalasi
 Ikuti langkah-langkah berikut untuk menginstal proyek:
