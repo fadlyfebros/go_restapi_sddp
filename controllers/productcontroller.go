@@ -1,7 +1,6 @@
 package controllers
 
 import (
-	"fmt"
 	"net/http"
 	"strconv"
 
@@ -9,59 +8,54 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-// GET /api/product
-func Index(c *gin.Context) {
-    var products []moduls.Product
-    moduls.DB.Find(&products)
-    c.JSON(http.StatusOK, products)
+func GetAllParfum(c *gin.Context) {
+	var parfums []moduls.Parfum
+	moduls.DB.Find(&parfums)
+	c.JSON(http.StatusOK, parfums)
 }
 
-// GET /api/product/:id
-func Show(c *gin.Context) {
-    id, _ := strconv.ParseInt(c.Param("id"), 10, 64)
-    var product moduls.Product
-    if err := moduls.DB.First(&product, id).Error; err != nil {
-        c.JSON(http.StatusNotFound, gin.H{"message": "Product not found"})
-        return
-    }
-    c.JSON(http.StatusOK, product)
+func GetParfumByID(c *gin.Context) {
+	id, _ := strconv.ParseInt(c.Param("id"), 10, 64)
+	var parfum moduls.Parfum
+	if err := moduls.DB.First(&parfum, id).Error; err != nil {
+		c.JSON(http.StatusNotFound, gin.H{"message": "Parfum not found"})
+		return
+	}
+	c.JSON(http.StatusOK, parfum)
 }
 
-// POST /api/product
-func Create(c *gin.Context) {
-    fmt.Println("Create function called")
-    var product moduls.Product
-    if err := c.ShouldBindJSON(&product); err != nil {
-        c.JSON(http.StatusBadRequest, gin.H{"message": "Invalid input"})
-        return
-    }
-    moduls.DB.Create(&product)
-    c.JSON(http.StatusCreated, product)
-}
-// PUT /api/product/:id
-func Update(c *gin.Context) {
-    id, _ := strconv.ParseInt(c.Param("id"), 10, 64)
-    var product moduls.Product
-    if err := moduls.DB.First(&product, id).Error; err != nil {
-        c.JSON(http.StatusNotFound, gin.H{"message": "Product not found"})
-        return
-    }
-    if err := c.ShouldBindJSON(&product); err != nil {
-        c.JSON(http.StatusBadRequest, gin.H{"message": "Invalid input"})
-        return
-    }
-    moduls.DB.Save(&product)
-    c.JSON(http.StatusOK, product)
+func CreateParfum(c *gin.Context) {
+	var parfum moduls.Parfum
+	if err := c.ShouldBindJSON(&parfum); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"message": "Invalid input"})
+		return
+	}
+	moduls.DB.Create(&parfum)
+	c.JSON(http.StatusCreated, parfum)
 }
 
-// DELETE /api/product/:id
-func Delete(c *gin.Context) {
-    id, _ := strconv.ParseInt(c.Param("id"), 10, 64)
-    var product moduls.Product
-    if err := moduls.DB.First(&product, id).Error; err != nil {
-        c.JSON(http.StatusNotFound, gin.H{"message": "Product not found"})
-        return
-    }
-    moduls.DB.Delete(&product)
-    c.JSON(http.StatusOK, gin.H{"message": "Product deleted"})
+func UpdateParfum(c *gin.Context) {
+	id, _ := strconv.ParseInt(c.Param("id"), 10, 64)
+	var parfum moduls.Parfum
+	if err := moduls.DB.First(&parfum, id).Error; err != nil {
+		c.JSON(http.StatusNotFound, gin.H{"message": "Parfum not found"})
+		return
+	}
+	if err := c.ShouldBindJSON(&parfum); err != nil {
+		c.JSON(http.StatusBadRequest, gin.H{"message": "Invalid input"})
+		return
+	}
+	moduls.DB.Save(&parfum)
+	c.JSON(http.StatusOK, parfum)
+}
+
+func DeleteParfum(c *gin.Context) {
+	id, _ := strconv.ParseInt(c.Param("id"), 10, 64)
+	var parfum moduls.Parfum
+	if err := moduls.DB.First(&parfum, id).Error; err != nil {
+		c.JSON(http.StatusNotFound, gin.H{"message": "Parfum not found"})
+		return
+	}
+	moduls.DB.Delete(&parfum)
+	c.JSON(http.StatusOK, gin.H{"message": "Parfum deleted"})
 }
