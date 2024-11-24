@@ -10,12 +10,21 @@ var DB *gorm.DB
 
 // Fungsi untuk menghubungkan ke database
 func ConnectDatabase() {
+<<<<<<< HEAD
     dsn := "root:@tcp(localhost:3306)/go_restapi_sddp"
     var err error
     DB, err = gorm.Open(mysql.Open(dsn), &gorm.Config{})
     if err != nil {
         log.Fatal("Failed to connect to the database:", err)
     }
+=======
+	dsn := "root:@tcp(127.0.0.1:3306)/go_restapi_sddp"
+	var err error
+	DB, err = gorm.Open(mysql.Open(dsn), &gorm.Config{})
+	if err != nil {
+		log.Fatal("Failed to connect to the database:", err)
+	}
+>>>>>>> 399dcdc9ca4e492a45cecbd0e5d560b70594a515
 
     // Migrasi model Parfum ke dalam database
     err = DB.AutoMigrate(&Parfum{}, &Cart{}, &CartItem{}, &Order{})
