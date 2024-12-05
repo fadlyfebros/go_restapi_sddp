@@ -1,9 +1,7 @@
 # go_restapi_sddp
-<<<<<<< HEAD
 
 Proyek ini adalah REST API sederhana yang dikembangkan dengan Golang.
 
-=======
 <img align="right" width="159px" src="https://raw.githubusercontent.com/gin-gonic/logo/master/color.png">
 
 [![Build Status](https://github.com/gin-gonic/gin/workflows/Run%20Tests/badge.svg?branch=master)](https://github.com/gin-gonic/gin/actions?query=branch%3Amaster)
@@ -30,7 +28,7 @@ Extensible
 Proyek ini adalah REST API sederhana yang dikembangkan dengan Golang.
 
 Getting started
->>>>>>> 399dcdc9ca4e492a45cecbd0e5d560b70594a515
+
 ## Daftar Isi
 1. [Pendahuluan](#pendahuluan)
 2. [Fitur](#fitur)
@@ -38,26 +36,26 @@ Getting started
 4. [Instalasi](#instalasi)
 
 ## Pendahuluan
-<<<<<<< HEAD
+
 Proyek ini adalah REST API sederhana yang dikembangkan dengan Golang. Proyek ini bertujuan untuk memberikan panduan praktis dalam membangun REST API dengan struktur kode yang terorganisir dan menggunakan teknologi modern seperti JWT untuk otentikasi.
 
-=======
+
 Proyek ini bertujuan untuk memberikan contoh implementasi REST API menggunakan Golang, lengkap dengan dokumentasi dan konfigurasi.
->>>>>>> 399dcdc9ca4e492a45cecbd0e5d560b70594a515
+
 
 ## Fitur
 - CRUD operasi (Create, Read, Update, Delete)
 - Otentikasi menggunakan JWT
-<<<<<<< HEAD
+
 - Validasi input untuk keamanan
 - Logging untuk pemantauan aktivitas
 - Dukungan koneksi database MySQL atau PostgreSQL
 - Struktur folder yang mengikuti standar industri
 
-=======
+
 - Validasi input
 - Struktur folder yang terorganisir
->>>>>>> 399dcdc9ca4e492a45cecbd0e5d560b70594a515
+
 
 ## Persyaratan
 Sebelum memulai, pastikan Anda sudah memiliki:
@@ -66,22 +64,18 @@ Sebelum memulai, pastikan Anda sudah memiliki:
 - Xampp 
 - Git
 - mysql server (download di https://dev.mysql.com/downloads/mysql/)
-=======
 - xampp
 - MySQL kl blm punya download di ([sini](https://dev.mysql.com/downloads/installer/))
 - Git
 - postman kl blm punya download di ([sini](https://www.postman.com/downloads/))
->>>>>>> 399dcdc9ca4e492a45cecbd0e5d560b70594a515
 
 ## Instalasi
 Ikuti langkah-langkah berikut untuk menginstal proyek:
 
-<<<<<<< HEAD
 1. Clone repository:
    ```bash
    git clone https://github.com/fadlyfebros/go_restapi_sddp.git
-=======
-1. Persiapkan lingkungan pengembangan
+   
 Pastikan Anda telah menginstal beberapa alat berikut:
 
 XAMPP (termasuk MySQL). Jika belum, Anda dapat mengunduhnya di ([sini](https://dev.mysql.com/downloads/installer/)).
@@ -122,4 +116,3 @@ dsn := "root:@tcp(127.0.0.1:3306)/go_restapi_sddp"
 Setelah melakukan perubahan tersebut, coba jalankan kembali aplikasi menggunakan:
 
 go run main.go
->>>>>>> 399dcdc9ca4e492a45cecbd0e5d560b70594a515
