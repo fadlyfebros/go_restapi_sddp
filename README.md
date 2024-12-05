@@ -44,17 +44,12 @@ Proyek ini bertujuan untuk memberikan contoh implementasi REST API menggunakan G
 
 
 ## Fitur
-- CRUD operasi (Create, Read, Update, Delete)
-- Otentikasi menggunakan JWT
-
-- Validasi input untuk keamanan
-- Logging untuk pemantauan aktivitas
-- Dukungan koneksi database MySQL atau PostgreSQL
-- Struktur folder yang mengikuti standar industri
-
-
-- Validasi input
-- Struktur folder yang terorganisir
+- **CRUD Operations**: Perform Create, Read, Update, and Delete operations on perfumes.
+- **Authentication with JWT**: Secure the API endpoints using JSON Web Tokens (JWT) for authentication.
+- **Input Validation**: Ensure all input data is validated for security and correctness.
+- **Logging**: Monitor activity and log important events for debugging and auditing purposes.
+- **Database Support**: Connect to MySQL for storing data. You can also adapt the system to support PostgreSQL.
+- **Folder Structure**: The project follows standard industry practices for folder and file organization.
 
 
 ## Persyaratan
