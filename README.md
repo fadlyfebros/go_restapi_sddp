@@ -55,7 +55,6 @@ Proyek ini bertujuan untuk memberikan contoh implementasi REST API menggunakan G
 ## Persyaratan
 Sebelum memulai, pastikan Anda sudah memiliki:
 - Golang versi 1.20 atau lebih baru
-<<<<<<< HEAD
 - Xampp 
 - Git
 - mysql server (download di https://dev.mysql.com/downloads/mysql/)
