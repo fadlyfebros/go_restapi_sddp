@@ -32,8 +32,18 @@ func Checkout(c *gin.Context) {
 
 	// Hitung Total Harga
 	total := 0.0
+	items := []gin.H{}
 	for _, item := range cart.Items {
-		total += float64(item.Quantity) * item.Parfum.Price
+		itemTotal := float64(item.Quantity) * item.Parfum.Price
+		total += itemTotal
+
+		// Tambahkan item ke dalam array response
+		items = append(items, gin.H{
+			"parfum_name": item.Parfum.Name,
+			"quantity":    item.Quantity,
+			"price":       item.Parfum.Price,
+			"item_total":  itemTotal,
+		})
 	}
 
 	// Buat Order Baru
@@ -55,6 +65,11 @@ func Checkout(c *gin.Context) {
 
 	c.JSON(http.StatusCreated, gin.H{
 		"message": "Checkout successful",
-		"order":   order,
+		"order": gin.H{
+			"order_id":    order.ID,
+			"user_id":     order.UserID,
+			"total_amount": total,
+			"items":       items,
+		},
 	})
 }
